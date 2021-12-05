@@ -1,0 +1,43 @@
+$mycolor: rgb(29, 4, 68);
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    color: black;
+}
+
+main {
+    flex: 2;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem;
+    font: 300 1rem "Roboto", sans-serif;
+    background: rgba(238, 234, 234, 0.7);
+}
+
+p {
+    margin: 10px;
+    color:$mycolor;
+}
+
+.nono{
+    font-size: 20px;
+    
+    color: rgb(59, 2, 2);
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    font-weight: 500px;
+    text-align: left;
+}
+
+section {
+    max-width: 800px;
+    margin:  auto;
+}
+
+
+a:hover {
+    color: $mycolor;
+}
