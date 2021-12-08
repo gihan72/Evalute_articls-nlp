@@ -1,7 +1,7 @@
 # Evaluate A News Article with Natural Language Processing
 
-#The goal 
-of this project is to give you practice with:
+
+# The goal of this project :-
 
 * Setting up Webpack
 * Sass styles
@@ -15,10 +15,8 @@ of this project is to give you practice with:
 ## Installation
 
 1. go to the project folder
-`
-2. Install npm
 
-npm install
+2. Install npm ---->    npm install
 
 3. Install loaders and plugins
 
@@ -33,9 +31,7 @@ npm i -D optimize-css-assets-webpack-plugin terser-webpack-plugin
 4. Sign up for an API key at [meaningcloud.com](https://www.meaningcloud.com/developer/create-account)
 
 5. Configure environment variables using dotenv package
-	1. Install the dotenv 
-	
-	npm install dotenv
+	1. Install the dotenv ----->npm install dotenv
 	
 	2. Create a new `.env` file 
 	3. write your API key in`.env` file with  like this:
