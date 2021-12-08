@@ -23,11 +23,11 @@ console.log(__dirname)
 // API
 const masterUrl = 'https://api.meaningcloud.com/sentiment-2.1?'
 const apiKey = process.env.API_KEY
-console.log(`Your API Key is ${process.env.API_KEY}`);
+console.log(`Your API_Key is-->> ${process.env.API_KEY}`);
 let userEnter = [] ;
 
 app.get('/', function (req, res) {
-    res.sendFile('dist/index.html')
+    res.sendFile(path.resolve('dist/index.html'))
     
 })
 
@@ -43,14 +43,14 @@ app.post('/api', async function(req, res) {
 
     const response = await fetch(apiURL)
     const mData = await response.json()
-    console.log(mData)
+    console.log("this is my data", mData)
     res.send(mData)
    
 })
 
 
-app.listen(8082, function () {
+app.listen(8081, function () {
 
     console.log('server is running :) :) !!!!!!!!!');
-    console.log('on localhost port 8082 !!!');
+    console.log('on localhost port 8081!!!');
 })
