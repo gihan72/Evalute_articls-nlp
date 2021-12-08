@@ -10,11 +10,13 @@ function handleSubmit(event) {
     postData('http://localhost:8081/api', {url: formText})
 
     .then(function(res) {
-        document.getElementById('polarity').innerHTML = 'Polarity: '+checPolarity(res.score_tag);
-        document.getElementById("agreement").innerHTML = `Agreement: ${res.agreement}`;
-        document.getElementById("subjectivity").innerHTML = `Subjectivity: ${res.subjectivity}`;
-        document.getElementById("confidence").innerHTML = `Confidence: ${res.confidence}`;
-        document.getElementById("irony").innerHTML = `Irony: ${res.irony}`;
+        
+        document.getElementById("model").innerHTML = `Model is: ${res. model}`;
+        document.getElementById("score_tag").innerHTML = `Score_tag is: ${res.score_tag}`;
+        document.getElementById("agreement").innerHTML = `Agreement is: ${res.agreement}`;
+        document.getElementById("subjectivity").innerHTML = `Subjectivity is: ${res.subjectivity}`;
+        document.getElementById("confidence").innerHTML = `Confidence is: ${res.confidence}`;
+        document.getElementById("irony").innerHTML = `Irony is: ${res.irony}`;
     })
     } else {
         alert(' Invalid URL, please try again!!!.');
@@ -41,31 +43,5 @@ const postData = async (url = "", data = {}) => {
     }
 };
 
-// API response output (https://www.meaningcloud.com/developer/sentiment-analysis/doc/2.1/response)
-
-const checPolarity = (score) => {
-    let display;
-    switch (score){
-        case 'P+':
-            display = 'strong positive';
-            break;
-        case 'P':
-            display = 'positive';
-            break;
-        case 'NEW':
-            display = 'neutral';
-            break;
-        case 'N':
-            display = 'negative';
-            break;
-        case 'N+':
-            display = 'strong negative';
-            break;
-        case 'NONE':
-            display = 'no sentiment';
-    }
-    return display.toLowerCase();
-}
 
 export { handleSubmit }
-export { checPolarity }
