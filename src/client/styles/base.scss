@@ -13,23 +13,31 @@ main {
     justify-content: center;
     text-align: center;
     margin: 2rem;
-    font: 300 1rem "Roboto", sans-serif;
-    background: rgba(238, 234, 234, 0.7);
+    font: 20px "Roboto", sans-serif;
+    background: rgba(186, 243, 179, 0.7);
 }
 
 p {
     margin: 10px;
     color:$mycolor;
 }
+.ti{
+    font-size: 30px;
+text-decoration:dashed ;
+text-underline-position:15px ;
+padding-top: 30px;
+color:rgb(112, 6, 6);
 
+}
 .nono{
     font-size: 20px;
-    
-    color: rgb(59, 2, 2);
+   line-height:30px;
+    color: rgb(2, 58, 35);
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: 1px;
-    font-weight: 500px;
+    font-weight: 800px;
     text-align: left;
+    
 }
 
 section {
