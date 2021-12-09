@@ -20,7 +20,7 @@ app.use(express.static('dist'))
 
 console.log(__dirname)
 
-// API
+
 const masterUrl = 'https://api.meaningcloud.com/sentiment-2.1?'
 const apiKey = process.env.API_KEY
 console.log(`Your API_Key is-->> ${process.env.API_KEY}`);
@@ -47,10 +47,10 @@ app.post('/api', async function(req, res) {
     res.send(mData)
    
 })
+//
 
-
-app.listen(8081, function () {
+app.listen(8086, function () {
 
     console.log('server is running :) :) !!!!!!!!!');
-    console.log('on localhost port 8081!!!');
+    console.log('on localhost port 8086!!!');
 })
